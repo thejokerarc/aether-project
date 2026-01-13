@@ -1,0 +1,36 @@
+{
+    "name": "project-aether-core",
+    "private": true,
+    "version": "1.2.0",
+    "description": "Zeno AI OS Agent - Native Windows Edition",
+    "author": "Antigravity",
+    "main": "main.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "electron .",
+        "dist": "electron-builder",
+        "server": "node simple_server.cjs",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "electron": "^39.2.7",
+        "electron-builder": "^26.4.0",
+        "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "three": "^0.160.0"
+    },
+    "build": {
+        "appId": "com.zeno.os.portable",
+        "productName": "Zeno_Agent",
+        "directories": {
+            "output": "dist"
+        },
+        "win": {
+            "target": [
+                "nsis"
+            ]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "status": "INITIALIZING",
+    "auth_type": "NONE",
+    "hand_pos": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
+    "active_gesture": "NONE",
+    "voice_amplitude": 0.0
+}
